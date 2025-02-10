@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanbase - Pinterest Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-box" placeholder="Search images...">
+        <h1>Fanbase</h1>
+    </header>
+
+    <!-- Filter Tags (Category Navigation) -->
+    <div id="filter-tags">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('arena')">Arena</button>
+        <button onclick="filterImages('space')">Space</button>
+        <button onclick="filterImages('meme')">Meme</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div id="gallery"></div>
+
+    <!-- Image Modal -->
+   
+<!-- Image Modal -->
+<div id="image-modal">
+    <span id="close-modal" class="close-btn">&times;</span> <!-- Close Button (X) -->
+    <div class="modal-content">
+        <button id="prev-image">◀️</button>
+        <img id="modal-img" src="">
+        <button id="next-image">▶️</button>
+    </div>
+    <div class="modal-buttons">
+        <button id="download-btn">⬇️</button>
+        <button id="like-btn">🤍</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
